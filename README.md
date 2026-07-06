@@ -1,11 +1,9 @@
 <div align="center">
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://demolab.com+✓">
-    <img src="https://demolab.com+✓" alt="DFX CLOUD Animation">
-  </picture>
+  <img src="https://vercel.app" alt="DFX CLOUD banner" />
 </div>
+
 
     
 # ⚡ DFX Cloud VPS Bot
