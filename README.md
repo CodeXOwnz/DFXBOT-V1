@@ -2,10 +2,11 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://shields.io">
-    <img src="https://shields.io" alt="DFX CLOUD Sticker">
+    <source media="(prefers-color-scheme: dark)" srcset="https://demolab.com+✓">
+    <img src="https://demolab.com+✓" alt="DFX CLOUD Animation">
   </picture>
 </div>
+
     
 # ⚡ DFX Cloud VPS Bot
 
