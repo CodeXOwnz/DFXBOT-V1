@@ -23,7 +23,7 @@ NC="\e[0m"
 
 INSTALLER_CODE="dfxcloud2026"
 
-BOT_ARCHIVE_URL="https://files.catbox.moe/905stz.gz"
+BOT_ARCHIVE_URL="https://files.catbox.moe/u1tuqo.gz"
 BOT_ARCHIVE_NAME="dfxcloudbot.tar.gz"
 
 INSTALL_DIR="dfxcloudbot"
