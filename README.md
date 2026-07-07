@@ -171,6 +171,12 @@ dfxbot restart
 
 ---
 
+## Important 
+```echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -s 172.17.0.0/16 ! -o docker0 -j MASQUERADE
+# Make permanent:
+apt install iptables-persistent -y && netfilter-persistent save```
+
 ## 💬 Bot Commands
 
 > Default prefix: **`1`** — configurable via `BOT_PREFIX` in `.env`
