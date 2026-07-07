@@ -1,542 +1,401 @@
-<div align="center">
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=DFX+Cloud+Bot+%E2%9A%A1;Discord+VPS+Management+Bot;Powered+by+Docker+%F0%9F%90%B3;SSH+%7C+SSHx+%7C+Snapshots+%7C+Plans" alt="Typing SVG" />
+</p>
 
-<div align="center">
-  <img src="https://vercel.app" alt="DFX CLOUD banner" />
-</div>
+<p align="center">
+  <a href="https://github.com/CodeXOwnz/DFXBOT-V1">
+    <img src="https://img.shields.io/badge/GitHub-DFXBOT--V1-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Discord.py-Latest-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Powered-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+</p>
 
-
-    
-# ⚡ DFX Cloud VPS Bot
-
-**Premium Discord VPS Management Bot — Docker · SQLite · Cyber-Neon UI**
-
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![discord.py](https://img.shields.io/badge/discord.py-2.3+-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordpy.readthedocs.io)
-[![Docker](https://img.shields.io/badge/Docker-Backend-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
-[![SQLite](https://img.shields.io/badge/SQLite-WAL-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
-[![License](https://img.shields.io/badge/License-Private-red?style=for-the-badge)](#)
-
----
-
-*A fully-featured VPS management bot with coin economy, auto-SSH, port forwarding, resource monitoring, and a stunning Cyber-Neon embed interface — all running on Docker.*
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20by-DFX%20CLOUD%20TECHNOLOGIES-00D4FF?style=flat-square&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Powered%20by-WarriorXwiN%20%28OG%20BEGAMING%29-FF6B35?style=flat-square" />
+</p>
 
 ---
 
-## 📋 Table of Contents
+<p align="center">
 
-- [✨ Features](#-features)
-- [🚀 Installation](#-installation)
-- [⚙️ Configuration](#️-configuration)
-- [📂 Project Structure](#-project-structure)
-- [📖 Command Reference](#-command-reference)
-- [🔌 SSH Access](#-ssh-access)
-- [💰 Coin Economy](#-coin-economy)
-- [🛡️ Admin Guide](#️-admin-guide)
-- [📜 Credits](#-credits)
+```
+██████╗ ███████╗██╗  ██╗     ██████╗██╗      ██████╗ ██╗   ██╗██████╗
+██╔══██╗██╔════╝╚██╗██╔╝    ██╔════╝██║     ██╔═══██╗██║   ██║██╔══██╗
+██║  ██║█████╗   ╚███╔╝     ██║     ██║     ██║   ██║██║   ██║██║  ██║
+██║  ██║██╔══╝   ██╔██╗     ██║     ██║     ██║   ██║██║   ██║██║  ██║
+██████╔╝██║     ██╔╝ ██╗    ╚██████╗███████╗╚██████╔╝╚██████╔╝██████╔╝
+╚═════╝ ╚═╝     ╚═╝  ╚═╝     ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝
+
+         DISCORD VPS MANAGEMENT BOT  ·  DOCKER EDITION  ⚡
+```
+
+</p>
+
+---
+
+## 📖 About
+
+**DFX Cloud Bot** is a powerful Discord bot that lets server admins and users **deploy, manage, and SSH into real Linux VPS containers** — all from inside Discord. No panel, no browser, just commands and buttons.
+
+Every VPS is a real Docker container. Users get **tmate SSH**, **SSHx web terminal**, live **resource stats**, **snapshots**, **port forwarding**, and a full **coins/plans economy** — managed entirely through Discord.
+
+> 🏢 **Made by:** DFX Cloud Technologies  
+> ⚡ **Powered by:** WarriorXwiN (OG BEGAMING)  
+> 🔗 **Source:** [github.com/CodeXOwnz/DFXBOT-V1](https://github.com/CodeXOwnz/DFXBOT-V1)
 
 ---
 
 ## ✨ Features
 
-| 🏷️ Category | 🔧 Details |
-|---|---|
-| **🖥️ VPS Backend** | Docker containers · privileged mode · nested Docker support |
-| **🔐 SSH Access** | tmate relay (auto-install, 3× retry) + OpenSSH port-mapped fallback |
-| **💾 Database** | SQLite WAL — zero-config, crash-safe, no external DB server needed |
-| **🎨 UI** | Cyber-Neon premium embeds · progress bars · animated step lists · status badges |
-| **💰 Economy** | Coins · daily / work · streaks · achievements · quests · shop · boosters |
-| **📦 Plans** | Deploy plans · resource packs · OS-selector wizard · admin plan CRUD |
-| **🎟️ Coupons** | Create · redeem · disable / enable · per-code use limits & expiry |
-| **🔌 Port Forwarding** | Real iptables DNAT rules · per-user slot system · auto fallback |
-| **📊 VPS Control** | ManageView (SSH / Start / Stop / Restart / Stats / Reinstall / Neofetch) |
-| **🛡️ Admin Suite** | Add · remove · suspend · unsuspend · exec · move · clone · wipe |
-| **📡 Monitoring** | Background resource monitor · auto-suspend · threshold config · `hostfetch` |
-| **📸 Snapshots** | Docker commit/restore system · per-VPS snapshot library |
-| **👥 Sharing** | Share VPS access with other users · revoke at any time |
-| **📟 Hosting Status** | `1hostfetch` — neofetch-style host panel (CPU · RAM · Disk · Network) |
+<table>
+<tr><td>🐳 <b>Docker VPS</b></td><td>Each VPS is an isolated Docker container — no VM overhead, instant creation</td></tr>
+<tr><td>🔐 <b>tmate SSH</b></td><td>One-click SSH via tmate relay — <code>ssh abc@sfo2.tmate.io</code></td></tr>
+<tr><td>🌐 <b>SSHx Web Terminal</b></td><td>Browser-based terminal via sshx.io — no SSH client needed</td></tr>
+<tr><td>🐧 <b>10 OS Images</b></td><td>Ubuntu 16.04–24.04 and Debian 8–12, all pre-baked with tmate</td></tr>
+<tr><td>📦 <b>Snapshots</b></td><td>Save and restore container state as Docker images</td></tr>
+<tr><td>🔌 <b>Port Forwarding</b></td><td>iptables DNAT rules to expose container ports to the internet</td></tr>
+<tr><td>💰 <b>Economy System</b></td><td>Coins, daily rewards, work command, plan purchases</td></tr>
+<tr><td>🎫 <b>Plans & Coupons</b></td><td>Free / Basic / Standard / Pro / Premium tiers + discount codes</td></tr>
+<tr><td>📊 <b>Live Stats</b></td><td>Real-time CPU, RAM, network and disk I/O per container</td></tr>
+<tr><td>🛡️ <b>Admin Tools</b></td><td>Full admin control: create, suspend, remove, info for any VPS</td></tr>
+<tr><td>🔔 <b>Expiry Alerts</b></td><td>Auto-stop expired VPS + DM notification to owner</td></tr>
+<tr><td>🤝 <b>VPS Sharing</b></td><td>Share VPS access with other Discord users</td></tr>
+<tr><td>⚡ <b>Resource Monitor</b></td><td>Auto-suspend containers exceeding CPU/RAM thresholds</td></tr>
+</table>
+
+---
+
+## 🐧 Supported OS Images
+
+| Distro | Versions |
+|--------|----------|
+| **Ubuntu** | `16.04` · `18.04` · `20.04` · `22.04` · `24.04` |
+| **Debian** | `8` (Jessie) · `9` (Stretch) · `10` (Buster) · `11` (Bullseye) · `12` (Bookworm) |
+
+All images are pre-baked with **tmate** + **OpenSSH** at build time — SSH works instantly with no apt installs inside the container.
 
 ---
 
 ## 🚀 Installation
 
-### Prerequisites
+### Requirements
 
-Make sure your **host machine** has the following installed:
+- Linux server (Ubuntu 20.04+ or Debian 11+ recommended)
+- Root or sudo access
+- A Discord Bot Token — [discord.com/developers](https://discord.com/developers/applications)
+- Your Discord User ID (for admin access)
+
+---
+
+### ⚡ One-Line Install
 
 ```bash
-# Check required tools
-docker --version       # Docker 20.10+
-python3 --version      # Python 3.11+
-pip3 --version         # pip (latest)
+bash <(curl -sSL https://raw.githubusercontent.com/CodeXOwnz/DFXBOT-V1/main/installer.sh)
 ```
-
-> **Root access** is recommended for iptables port forwarding.  
-> **Docker** must be accessible by the user running the bot.
 
 ---
 
-### Step 1 — Download the bot
+### 📋 Step-by-Step Install
 
 ```bash
-# Clone or unzip into your server
-unzip DFX_Cloud_Bot.zip
-cd discord-bot
+# 1. Download the installer
+curl -O https://raw.githubusercontent.com/CodeXOwnz/DFXBOT-V1/main/installer.sh
+
+# 2. Make it executable
+chmod +x installer.sh
+
+# 3. Run as root
+sudo bash installer.sh
+```
+
+### What the Installer Does
+
+```
+Step 1 ─ Installs base dependencies (curl, wget, tar, iptables, etc.)
+Step 2 ─ Installs Docker + Docker Compose (if not already present)
+Step 3 ─ Downloads the latest bot package
+Step 4 ─ Prompts for Bot Token + Admin ID → writes to .env
+Step 5 ─ Builds the bot Docker image
+Step 6 ─ Starts the bot container (docker compose up -d)
+Step 7 ─ Builds all 10 VPS base images (Ubuntu + Debian with tmate)
+Step 8 ─ Installs the global `dfxbot` CLI command
 ```
 
 ---
 
-### Step 2 — Install Python dependencies
+## ⚙️ dfxbot CLI Reference
+
+The installer registers a global `dfxbot` command — use it from anywhere on the server:
 
 ```bash
-pip install -r requirements.txt
+dfxbot start          # Start the bot container
+dfxbot stop           # Stop the bot container
+dfxbot restart        # Restart the bot container
+dfxbot status         # Show container status
+dfxbot logs           # Stream live logs  (Ctrl+C to exit)
+dfxbot update         # Download latest package & rebuild
+dfxbot edit-env       # Edit .env with nano
+dfxbot build-images   # (Re)build all Ubuntu/Debian VPS base images
+dfxbot list-images    # Show which VPS base images are available
+dfxbot uninstall      # Stop & remove the bot container
 ```
-
-> Installs: `discord.py>=2.3`, `python-dotenv`, `psutil`, `aiohttp`
 
 ---
 
-### Step 3 — Configure the bot
+## 🛠️ Configuration
+
+Edit your `.env` at any time:
 
 ```bash
-# Copy the example config
-cp .env.example .env
-
-# Open and fill in your values
-nano .env
+dfxbot edit-env
+# Then restart to apply:
+dfxbot restart
 ```
 
-**Required fields in `.env`:**
-
-```env
-DISCORD_TOKEN=your_discord_bot_token_here
-ADMIN_IDS=1329731773021552660
-SERVER_IP=your_server_public_ip
-```
-
-> See the full [Configuration](#️-configuration) section for all options.
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `DISCORD_TOKEN` | Your Discord bot token | **required** |
+| `ADMIN_IDS` | Comma-separated admin user IDs | **required** |
+| `BOT_NAME` | Bot display name | `DFX Cloud` |
+| `HOST_NAME` | Company/host name shown in embeds | `DFX Cloud Technologies` |
+| `POWERED_BY` | Footer credit line | `DFX Cloud Technologies` |
+| `SERVER_IP` | Your server's public IP (for port forwards) | `127.0.0.1` |
+| `LOG_CHANNEL_ID` | Discord channel ID for action logs | `0` (disabled) |
+| `VPS_ROLE_ID` | Role assigned to VPS owners | `0` (disabled) |
+| `BOT_PREFIX` | Command prefix | `1` |
+| `CPU_THRESHOLD` | Auto-suspend at this CPU % | `90` |
+| `RAM_THRESHOLD` | Auto-suspend at this RAM % | `90` |
 
 ---
 
-### Step 4 — Invite the bot to your server
+## 💬 Bot Commands
 
-Go to the [Discord Developer Portal](https://discord.com/developers/applications), select your application, and generate an OAuth2 URL with these permissions:
-
-- ✅ `bot`
-- ✅ `Send Messages`
-- ✅ `Embed Links`
-- ✅ `Read Message History`
-- ✅ `Manage Roles` *(optional — for VPS role assignment)*
-- ✅ `Administrator` *(simplest for full functionality)*
-
----
-
-### Step 5 — Run the bot
-
-```bash
-python3 bot.py
-```
-
-**Run in background (recommended for production):**
-
-```bash
-# Using screen
-screen -S dfxbot
-python3 bot.py
-# Detach: Ctrl+A then D
-
-# Or using nohup
-nohup python3 bot.py > logs/bot.log 2>&1 &
-
-# Or using systemd (see below)
-```
-
-**Systemd service (recommended):**
-
-```ini
-# /etc/systemd/system/dfxbot.service
-[Unit]
-Description=DFX Cloud VPS Bot
-After=network.target docker.service
-Requires=docker.service
-
-[Service]
-Type=simple
-User=root
-WorkingDirectory=/path/to/discord-bot
-ExecStart=/usr/bin/python3 bot.py
-Restart=on-failure
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable dfxbot
-sudo systemctl start dfxbot
-sudo systemctl status dfxbot
-```
-
----
-
-### Step 6 — Verify startup
-
-You should see in the console:
-
-```
-[INFO] dfx-bot — Logged in as YourBot#1234 (123456789)
-[INFO] dfx-bot — Bot prefix: 1  |  Admins: {1329731773021552660}
-[INFO] dfx-bot — Loaded cog: cogs.vps_manage
-[INFO] dfx-bot — Loaded cog: cogs.admin_vps
-... (9 cogs total)
-```
-
-Bot status in Discord will show: **🎮 Playing with DFX Cloud ⚡ Powered by DFX Hosting**
-
----
-
-## ⚙️ Configuration
-
-All configuration is in `.env`. Copy `.env.example` and fill in your values.
-
-| Variable | Default | Required | Description |
-|---|---|---|---|
-| `DISCORD_TOKEN` | — | ✅ | Your bot token from Discord Developer Portal |
-| `ADMIN_IDS` | — | ✅ | Comma-separated Discord user IDs with admin access |
-| `SERVER_IP` | `127.0.0.1` | ✅ | Public IP of your VPS host machine |
-| `LOG_CHANNEL_ID` | `0` | ➖ | Discord channel ID for admin logs (`0` = disabled) |
-| `VPS_ROLE_ID` | `0` | ➖ | Role ID to assign on VPS creation (`0` = disabled) |
-| `BOT_PREFIX` | `1` | ➖ | Command prefix (default: `1`) |
-| `BOT_NAME` | `DFX Cloud` | ➖ | Bot display name used in embeds |
-| `HOST_NAME` | `DFX Cloud Technologies` | ➖ | Host company name |
-| `PORT_START` | `10000` | ➖ | Start of host port pool for VPS allocation |
-| `PORT_END` | `20000` | ➖ | End of host port pool |
-| `TMATE_WAIT_SECS` | `8` | ➖ | Seconds to wait per tmate connection attempt |
-| `TMATE_RETRIES` | `3` | ➖ | tmate attempts before OpenSSH fallback |
-| `CPU_THRESHOLD` | `90` | ➖ | CPU % that triggers auto-suspend |
-| `RAM_THRESHOLD` | `90` | ➖ | RAM % that triggers auto-suspend |
-| `DB_PATH` | `data/bot.db` | ➖ | SQLite database file path |
-
----
-
-## 📂 Project Structure
-
-```
-discord-bot/
-│
-├── bot.py                    ← Main bot file (config · DB · Docker · embeds · tasks)
-├── requirements.txt          ← Python dependencies
-├── .env.example              ← Configuration template
-├── README.md                 ← This file
-│
-├── data/
-│   ├── bot.db                ← SQLite database (auto-created on first run)
-│   └── snapshots/            ← VPS snapshot tarballs
-│
-└── cogs/
-    ├── vps_manage.py         ← ManageView · myvps · manage · snapshots · sharing · clone
-    ├── admin_vps.py          ← Full admin VPS suite (add/remove/suspend/exec/move/wipe…)
-    ├── coins.py              ← Economy system (daily · work · streaks · achievements · quests)
-    ├── plans.py              ← Deploy & resource plans · OS wizard · plan CRUD
-    ├── coupons.py            ← Coupon codes (create · redeem · manage)
-    ├── ports.py              ← Port forwarding (iptables DNAT · per-user slots)
-    ├── monitoring.py         ← hostfetch · serverstats · resource-check · thresholds
-    ├── admin_coins.py        ← Admin coin management (give · remove · set · config)
-    └── misc.py               ← Help menu · botinfo · set-status
-```
-
----
-
-## 📖 Command Reference
-
-> **Prefix:** `1` &nbsp;|&nbsp; Example: `1myvps`, `1deploy 1`, `1daily`
-
----
+> Default prefix: **`1`** — configurable via `BOT_PREFIX` in `.env`
 
 ### 👤 User Commands
 
 | Command | Description |
-|---|---|
-| `1ping` | Check bot latency |
-| `1uptime` | Show bot and host uptime |
-| `1botinfo` | Display bot and server information |
-| `1hostfetch` | Neofetch-style host panel (CPU · RAM · Disk · Network · Fleet) |
-| `1help` | Interactive category-based help with dropdown |
-
----
-
-### 🖥️ VPS Management
-
-| Command | Description |
-|---|---|
-| `1myvps` | List all your VPS instances |
-| `1manage [vps#]` | Open interactive VPS control panel (SSH · Start · Stop · Restart · Stats · Reinstall · Neofetch) |
-| `1vpsinfo [vps#]` | Detailed VPS information |
-| `1vps-stats [vps#]` | Live CPU & RAM usage |
-| `1vps-uptime [vps#]` | Show VPS uptime |
-| `1vps-processes [vps#]` | List top running processes |
-| `1vps-logs [vps#] [lines]` | Tail container logs |
-| `1restart-vps [vps#]` | Restart a VPS container |
-| `1neofetch [vps#]` | Run neofetch inside your VPS |
-| `1vps-name [vps#] <name>` | Set a custom name for your VPS |
-| `1snapshot [vps#] [name]` | Take a VPS snapshot |
-| `1list-snapshots [vps#]` | List all saved snapshots |
-| `1restore-snapshot [vps#] <name>` | Restore VPS from snapshot |
-| `1clone-vps [vps#] [name]` | Clone a VPS (costs 300 🪙) |
-| `1share-user @user <vps#>` | Grant another user VPS access |
-| `1share-ruser @user <vps#>` | Revoke a user's VPS access |
-| `1manage-shared @owner <vps#>` | Control a shared VPS |
-| `1add-resources [vps#] [ram] [cpu] [disk]` | Purchase extra resources directly |
-
----
-
-### 🚀 Plans & Deployment
-
-| Command | Description |
-|---|---|
-| `1deploy-plans` | Browse all VPS deployment plans |
-| `1resource-plans` | Browse resource upgrade packs |
-| `1os-list` | List all supported OS versions |
-| `1deploy <plan_id>` | Deploy a VPS (includes OS selector) |
-| `1deploy-os <plan_id>` | Deploy VPS with explicit OS selection |
-| `1upgrade [vps#] <plan_id>` | Upgrade resources on an existing VPS |
-| `1renewprices` | View renewal pricing |
-| `1renew [vps#] <15\|30>` | Extend VPS expiry with coins |
-
----
-
-### 💰 Coins & Economy
-
-| Command | Description |
-|---|---|
-| `1balance [@user]` | Check coin balance |
-| `1daily` | Claim daily reward (streak bonuses apply!) |
-| `1work` | Work for coins (4-hour cooldown) |
-| `1streak [@user]` | View daily streak and multiplier |
-| `1leaderboard` | Top coin holders |
-| `1transactions [page]` | View your transaction history |
-| `1gift @user <amount>` | Send coins to another user |
-| `1shop [item_id]` | Browse and purchase coin boosters |
-| `1booster` | View your active boosters |
-| `1achievements [@user]` | View unlocked achievements |
-| `1quests` | View daily & weekly quests |
-| `1profile [@user]` | Full user profile (coins · streak · VPS · achievements) |
-| `1coinhelp` | Tips on how to earn coins fast |
-
----
-
-### 🎟️ Coupons
-
-| Command | Description |
-|---|---|
-| `1redeem <code>` | Redeem a coupon code for coins |
-| `1create-coupon <coins> <code> [max_uses] [days]` | Create a coupon *(Admin)* |
-| `1list-coupons [all]` | List all coupon codes *(Admin)* |
-| `1coupon-stats <id>` | View coupon redemption stats *(Admin)* |
-| `1disable-coupon <id>` | Disable a coupon *(Admin)* |
-| `1enable-coupon <id>` | Re-enable a coupon *(Admin)* |
-| `1delete-coupon <id>` | Permanently delete a coupon *(Admin)* |
-
----
-
-### 🔌 Port Forwarding
-
-| Command | Description |
-|---|---|
+|---------|-------------|
+| `1myvps` | List all your VPS containers |
+| `1manage [vps#]` | Open the interactive VPS management panel |
+| `1vpsinfo [vps#]` | Detailed specs and status |
+| `1deploy` | Purchase & deploy a VPS using coins |
+| `1renew [vps#]` | Renew your VPS subscription |
+| `1snapshot [vps#] [name]` | Save a snapshot of your VPS |
+| `1list-snapshots [vps#]` | List available snapshots |
+| `1restore-snapshot [vps#] [name]` | Restore from a snapshot |
 | `1ports list` | List your active port forwards |
-| `1ports add <vps#> <host>:<container> [tcp\|udp]` | Add a port forward |
+| `1ports add <vps#> <host:container> [tcp\|udp]` | Add a port forward |
 | `1ports remove <id>` | Remove a port forward |
-| `1ports-add-user <amount> @user` | Grant extra port slots *(Admin)* |
-| `1ports-remove-user <amount> @user` | Reduce user port slots *(Admin)* |
-| `1ports-revoke <id>` | Force-revoke any forward *(Admin)* |
+| `1coins` | Check your coin balance |
+| `1daily` | Claim daily coin reward |
+| `1work` | Earn coins |
+| `1plans` | View available VPS plans & pricing |
+| `1help` | Full command list |
 
 ---
 
-### 📊 Monitoring & System
+### 🖥️ Manage Panel Buttons
 
-| Command | Description |
-|---|---|
-| `1hostfetch` | Neofetch-style host info panel |
-| `1serverstats` | Full host + fleet statistics |
-| `1thresholds` | View current auto-suspend thresholds |
-| `1resource-check` | Scan all VPS for high resource usage *(Admin)* |
-| `1cpu-monitor <status\|enable\|disable>` | Toggle background monitor *(Admin)* |
-| `1set-threshold <cpu%> <ram%>` | Update auto-suspend limits *(Admin)* |
+Running `1manage` opens a button panel in Discord:
+
+```
+Row 1:  🔐 SSH   ▶️ Start   ⏹️ Stop   🔄 Restart
+Row 2:  📊 Stats  🔧 Reinstall  🖥️ Neofetch  🌐 SSHx
+```
+
+| Button | What it does |
+|--------|-------------|
+| 🔐 **SSH** | Installs tmate in the container and returns `ssh abc@sfo2.tmate.io` |
+| 🌐 **SSHx** | Starts sshx.io session and returns a browser terminal URL |
+| ▶️ **Start** | Start the container |
+| ⏹️ **Stop** | Stop the container |
+| 🔄 **Restart** | Restart the container |
+| 📊 **Stats** | Live CPU · RAM · Network · Disk I/O embed |
+| 🔧 **Reinstall** | Wipe and reinstall the OS (with confirmation) |
+| 🖥️ **Neofetch** | System info printed to embed |
 
 ---
 
-### 🛡️ Admin — VPS
+### 🔑 Admin Commands
 
 | Command | Description |
-|---|---|
-| `1admin-add @user <ram> <cpu> <disk> [os] [days]` | Provision VPS for any user |
-| `1admin-remove <container_id>` | Force-delete any VPS |
-| `1admin-list [@user]` | List all VPS, optionally filtered by user |
-| `1admin-info <container_id>` | Detailed info for any VPS |
-| `1admin-stats` | Full fleet overview statistics |
+|---------|-------------|
+| `1admin-create @user <ram> <cpu> <disk> <os> [days]` | Create a VPS for any user |
+| `1admin-remove <container_id>` | Permanently delete a VPS |
 | `1admin-suspend <container_id> [reason]` | Suspend a VPS |
 | `1admin-unsuspend <container_id>` | Unsuspend a VPS |
-| `1admin-extend <container_id> [days]` | Extend VPS expiry |
-| `1admin-exec <container_id> <command>` | Execute shell command in container |
-| `1admin-setres <container_id> <ram> <cpu> <disk>` | Override VPS resource limits |
-| `1admin-wipe <container_id>` | Wipe and recreate a VPS container |
-| `1admin-move <container_id> @user` | Transfer VPS ownership |
-| `1admin-clone <container_id> [@user]` | Clone any VPS |
-| `1whitelist-vps <container_id> add\|remove` | Exempt VPS from auto-suspend |
-| `1suspension-logs [container_id]` | View suspension history |
-| `1stop-vps-all` | Force-stop ALL running containers ⚠️ |
-| `1broadcast <message>` | DM all active VPS owners |
-| `1vps-network <container_id>` | Inspect container network config |
-| `1admin-snapshot <container_id> [name]` | Admin: snapshot any VPS |
-| `1admin-vps-stats` | Aggregate resource stats across fleet |
+| `1admin-info <container_id>` | Full info + stats for any VPS |
+| `1admin-list` | List all registered containers |
+| `1admin-snapshot <container_id> [name]` | Snapshot any VPS |
+| `1stop-vps-all` | Force-stop ALL running VPS containers |
+| `1ports-add-user <amount> @user` | Give extra port forward slots |
+| `1ports-remove-user <amount> @user` | Remove port slots |
+| `1ports-revoke <forward_id>` | Force-revoke any port forward |
+| `1add-coins @user <amount>` | Add coins to a user |
+| `1remove-coins @user <amount>` | Remove coins from a user |
+| `1coupon-create <code> <discount%>` | Create a coupon code |
+| `1coupon-delete <code>` | Delete a coupon code |
 
 ---
 
-### 🛡️ Admin — Plans
+## 💰 Plans & Pricing
 
-| Command | Description |
-|---|---|
-| `1create-deploy-plan <name> <ram> <cpu> <disk> <days> <cost> [emoji]` | Create a deploy plan |
-| `1edit-deploy-plan <id> <field> <value>` | Edit a deploy plan field |
-| `1delete-deploy-plan <id>` | Delete a deploy plan |
-| `1list-deploy-plans` | List all deploy plans |
-| `1create-resource-plan <name> [ram] [cpu] [disk] <cost> [emoji]` | Create a resource plan |
-| `1delete-resource-plan <id>` | Delete a resource plan |
-| `1admin-renew @user [vps#] [days]` | Free VPS renewal for any user |
-| `1renewconfig [cost_15\|cost_30] [value]` | Configure renewal pricing |
+| Plan | RAM | CPU | Disk | Duration | Cost |
+|------|-----|-----|------|----------|------|
+| 🆓 **Free** | 1 GB | 1 vCPU | 10 GB | 1 day | Free |
+| 🚀 **Basic** | 2 GB | 2 vCPU | 20 GB | 7 days | 3,000 🪙 |
+| 🌟 **Standard** | 2 GB | 2 vCPU | 20 GB | 7 days | 3,000 🪙 |
+| 🔥 **Pro** | 4 GB | 4 vCPU | 40 GB | 7 days | 5,000 🪙 |
+| 💎 **Premium** | 8 GB | 4 vCPU | 80 GB | 30 days | 10,000 🪙 |
 
----
+**Resource Add-ons** (purchasable on top of any plan):
 
-### 🛡️ Admin — Coins & Bot
-
-| Command | Description |
-|---|---|
-| `1givecoins @user <amount>` | Add coins to a user |
-| `1removecoins @user <amount>` | Deduct coins from a user |
-| `1setcoins @user <amount>` | Set exact coin balance |
-| `1coinconfig [setting] [value]` | Configure economy settings |
-| `1userinfo @user` | Full user profile for any member |
-| `1set-status <playing\|watching\|listening> <text>` | Change bot presence |
+| Add-on | Bonus | Price |
+|--------|-------|-------|
+| 🧠 +4GB RAM | +4 GB RAM | 150 🪙 |
+| ⚡ +2 CPU | +2 vCPU | 100 🪙 |
+| 💾 +50GB Disk | +50 GB storage | 120 🪙 |
+| 📦 Small Bundle | +4GB RAM · +2 CPU · +20GB | 300 🪙 |
+| 📦 Large Bundle | +8GB RAM · +4 CPU · +50GB | 550 🪙 |
 
 ---
 
-## 🔌 SSH Access
-
-The bot uses a **two-tier SSH system**:
+## 🏗️ Architecture
 
 ```
-Tier 1 (Primary)   → tmate relay (auto-installed, 3 retries)
-Tier 2 (Fallback)  → OpenSSH on pre-allocated ssh_port
+Discord Users
+      │
+      ▼
+┌─────────────────────────────────────────────────┐
+│         dfx-cloud-bot  (Docker container)       │
+│         network_mode: host                      │
+│         /var/run/docker.sock  ← host socket     │
+└───────────────────┬─────────────────────────────┘
+                    │  docker run / exec / inspect
+                    ▼
+         Docker Daemon (host machine)
+                    │
+       ┌────────────┼────────────┐
+       ▼            ▼            ▼
+  dfx-xxxx      dfx-yyyy     dfx-zzzz
+  Ubuntu 22     Debian 12    Ubuntu 20
+  172.17.0.2    172.17.0.3   172.17.0.4
+  tmate SSH     SSHx          OpenSSH
 ```
 
-Each container is allocated **two host ports** at creation:
-
-| Port | Maps to | Purpose |
-|---|---|---|
-| `http_port` | Container `:80` | Web services |
-| `ssh_port`  | Container `:22` | SSH fallback |
-
-**If tmate fails** (relay unreachable, rate-limited, etc.), the bot automatically:
-1. Installs `openssh-server` inside the container
-2. Generates a random root password
-3. Returns `ssh root@YOUR_SERVER_IP -p <ssh_port>` with credentials
+**Key design decisions:**
+- VPS containers run on Docker's **internal bridge** — no host ports exposed by default
+- Bot uses `network_mode: host` to reach bridge IPs (e.g. `172.17.0.x`) directly
+- Port forwarding is **opt-in** via `1ports add` using iptables DNAT rules
+- SQLite DB + snapshots persisted via Docker volume mount (`./data`)
 
 ---
 
-## 💰 Coin Economy
+## 📦 Stack
 
-| Source | Amount | Cooldown |
-|---|---|---|
-| `1daily` | 100–300 🪙 + streak bonus | 24 hours |
-| `1work` | 50–150 🪙 | 4 hours |
-| Streak bonus | Up to `3×` multiplier at 30-day streak | — |
-| Achievements | Bonus coins on unlock | — |
-| Quests | Daily & weekly bonus rewards | Resets daily/weekly |
-| Coupons | Admin-defined | Per-code limit |
-
-**Spending:**
-
-| Purchase | Cost |
-|---|---|
-| Deploy plan | Plan-defined |
-| Resource upgrade | Plan-defined |
-| VPS renewal (15 days) | Configurable (default 200 🪙) |
-| VPS renewal (30 days) | Configurable (default 350 🪙) |
-| Clone VPS | 300 🪙 |
+| Layer | Technology |
+|-------|-----------|
+| Language | Python 3.12 |
+| Discord Library | discord.py |
+| Container Runtime | Docker (docker-out-of-docker via socket) |
+| Database | SQLite (WAL mode) |
+| SSH (primary) | tmate relay |
+| SSH (fallback) | OpenSSH inside container |
+| Web Terminal | sshx.io |
+| Port Forwarding | iptables DNAT + MASQUERADE |
+| Deployment | Docker Compose |
 
 ---
 
-## 🛡️ Admin Guide
+## 📁 File Structure
 
-**Set your admin ID in `.env`:**
-```env
-ADMIN_IDS=1329731773021552660
+```
+discord-bot/
+├── bot.py                 ← Core: DB, Docker helpers, bot setup, background tasks
+├── docker-compose.yml     ← Bot container definition
+├── Dockerfile             ← Bot container image (Python 3.12 + Docker CLI)
+├── Dockerfile.vps         ← VPS base image builder (Ubuntu/Debian + tmate)
+├── requirements.txt       ← Python dependencies
+├── .env.example           ← Configuration template
+├── data/                  ← SQLite DB + snapshots (auto-created at runtime)
+│   └── snapshots/
+└── cogs/
+    ├── vps_manage.py      ← Manage panel, myvps, snapshots, sharing
+    ├── admin_vps.py       ← Admin commands
+    ├── plans.py           ← Plan purchase & VPS deploy
+    ├── ports.py           ← Port forwarding (iptables)
+    ├── coins.py           ← Economy: coins, daily, work
+    ├── admin_coins.py     ← Admin coin management
+    ├── coupons.py         ← Coupon codes
+    ├── monitoring.py      ← Resource monitor background task
+    └── misc.py            ← Help and miscellaneous commands
 ```
 
-**Multiple admins:**
-```env
-ADMIN_IDS=1329731773021552660,987654321098765432
-```
+---
 
-**First-time setup checklist:**
-- [ ] Set `DISCORD_TOKEN` and `SERVER_IP` in `.env`
-- [ ] Set `ADMIN_IDS` to your Discord user ID
-- [ ] (Optional) Set `LOG_CHANNEL_ID` to a private admin channel
-- [ ] (Optional) Set `VPS_ROLE_ID` for auto-role on VPS creation
-- [ ] Create deployment plans: `1create-deploy-plan Basic 1 1 10 7 100`
-- [ ] Create resource plans: `1create-resource-plan ExtraRAM 2 0 0 150`
-- [ ] Create a welcome coupon: `1create-coupon 200 WELCOME2024 0 30`
+## 🔧 Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Bot doesn't start | Run `dfxbot logs` and check for missing `.env` values |
+| `docker: command not found` | Run `dfxbot build-images` to verify Docker is installed, or re-run installer |
+| SSH button says "failed" | Container may not have internet — check `docker inspect <cid>` network |
+| VPS image missing | Run `dfxbot build-images` to rebuild the OS images |
+| Port forward not working | Ensure `iptables` is installed: `apt install iptables` |
+| Coins not saving | Check `data/bot.db` exists and is writable by the bot container |
+| Bot restarts looping | Check `dfxbot logs` for Python errors — likely a bad `DISCORD_TOKEN` |
+
+---
+
+## 🛡️ Security Notes
+
+- tmate and SSHx links are sent **ephemerally** — only the requesting user can see them
+- Admin commands are restricted to Discord IDs listed in `ADMIN_IDS`
+- VPS containers use `--privileged` to support full Linux functionality (systemd, etc.)
+- No host ports are opened unless the user explicitly runs `1ports add`
+- The Docker socket (`/var/run/docker.sock`) grants full Docker access — keep your server secure
 
 ---
 
 ## 📜 Credits
 
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════╗
-║                  🏆  MADE WITH ❤️ BY                    ║
-╠══════════════════════════════════════════════════════════╣
-║                                                          ║
-║   ⚡  DFX CLOUD  (WarriorXwiN)                          ║
-║       Lead Developer · Architecture · Core Systems       ║
-║                                                          ║
-║   🎮  OG BEGAMING                                        ║
-║       Co-Developer · Testing · Feature Design            ║
-║                                                          ║
-║   🌐  DFX CLOUD COMMUNITY                               ║
-║       Contributors · Testers · Feedback                  ║
-║                                                          ║
-╠══════════════════════════════════════════════════════════╣
-║              Powered by DFX Cloud Technologies           ║
-║                   © 2024  DFX CLOUD                      ║
-╚══════════════════════════════════════════════════════════╝
-```
-
-### 🔗 Project Info
-
-| | |
-|---|---|
-| **Bot Name** | DFX Cloud VPS Bot |
-| **Version** | 2.0 (Merged Edition) |
-| **Backend** | Docker · SQLite WAL |
-| **Language** | Python 3.11+ · discord.py 2.3+ |
-| **Prefix** | `1` |
-| **Made by** | DFX CLOUD (WarriorXwiN) & OG BEGAMING |
-| **Organisation** | DFX Cloud Technologies |
-| **Status** | 🟢 Active |
-
-</div>
+<p align="center">
+  <table>
+    <tr>
+      <td align="center" width="200">
+        <b>🏢 DFX Cloud Technologies</b><br/>
+        <sub>Bot Developer & Infrastructure</sub>
+      </td>
+      <td align="center" width="200">
+        <b>⚡ WarriorXwiN</b><br/>
+        <sub>Founder · OG BEGAMING · Powered By</sub>
+      </td>
+    </tr>
+  </table>
+</p>
 
 ---
 
-<div align="center">
+## 🔗 Links
 
-**⭐ If you find this bot useful, give it a star!**
+| | Link |
+|-|------|
+| 📦 GitHub | [github.com/CodeXOwnz/DFXBOT-V1](https://github.com/CodeXOwnz/DFXBOT-V1) |
+| 💬 tmate | [tmate.io](https://tmate.io) |
+| 🌐 SSHx | [sshx.io](https://sshx.io) |
+| 🐳 Docker | [docs.docker.com](https://docs.docker.com) |
 
-*DFX Cloud Technologies — Powering your infrastructure, one container at a time.*
+---
 
-</div>
+<p align="center">
+  <b>© DFX Cloud Technologies · Powered by WarriorXwiN (OG BEGAMING)</b>
+  <br/><br/>
+  <img src="https://img.shields.io/badge/%E2%9A%A1-DFX%20Cloud%20Technologies-00D4FF?style=for-the-badge" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/OG%20BEGAMING-WarriorXwiN-FF6B35?style=for-the-badge" />
+</p>
+
